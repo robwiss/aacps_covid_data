@@ -1,0 +1,5 @@
+Projections.ipynb
+.venv/*
+__pycache__/*
+cases.db
+*.png
