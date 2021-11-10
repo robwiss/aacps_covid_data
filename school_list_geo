@@ -14,6 +14,7 @@ Belvedere Elementary,Elementary,559,39.0585871,-76.5022597
 Benfield Elementary,Elementary,430,39.0851312,-76.5896837
 BOE - Central Office,Unknown,,,
 Bodkin Elementary,Elementary,568,39.112586,-76.459612
+Bus 851,Bus,,,
 Bus 860,Bus,,,
 Broadneck Elementary,Elementary,777,39.0483954,-76.483907
 Broadneck High School,High,2167,39.0399308,-76.4535362
@@ -24,8 +25,10 @@ Cape St Claire Elementary,Elementary,649,39.0389258,-76.4449205
 Center Of Applied Tech North,Specialty Centers,1595,39.1283519,-76.6500681
 Central Elementary,Elementary,601,38.9240894,-76.5639047
 Central Middle,Middle,1222,38.9195952,-76.5576736
+Central Special Education,Specialty Centers,131,38.9277896,-76.5618031
 Chesapeake Bay Middle,Middle,1033,39.1098018,-76.4512245
 Chesapeake High School,High,1382,39.1077771,-76.4610574
+Chesapeake Science Point,Specialty Centers,475,39.1679154,-76.7346441
 Corkran Middle,Middle,677,39.1548306,-76.6341414
 Crofton Elementary,Elementary,725,39.013229,-76.6892744
 Crofton High School,High,1306,39.0005567,-76.6695173
@@ -67,6 +70,7 @@ Manor View Elementary,Elementary,343,39.1117525,-76.7406929
 Marley Elementary,Elementary,882,39.1438437,-76.5960486
 Marley Glen Special,Specialty Centers,110,39.143268,-76.5965903
 Marley Middle,Middle,893,39.1486628,-76.5955972
+Mary Moss At J. Albert Adams Academy,Specialty Centers,55,38.9818944,-76.500451
 Maryland City Elementary,Elementary,472,39.0958192,-76.8179446
 Mayo Elementary,Elementary,322,38.8964828,-76.511065
 Meade Heights Elementary,Elementary,426,39.1179013,-76.7180496
