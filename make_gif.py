@@ -54,6 +54,7 @@ def main():
              save_all=True, duration=500, loop=0)
     for f in glob.glob(fp_in):
         os.unlink(f)
+    print("finished")
 
 if __name__ == '__main__':
     main()

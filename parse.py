@@ -84,7 +84,9 @@ def main():
         if cur.fetchone()[0] == 0:
             datafile_path = 'data_{}'.format(d.isoformat())
             parsed = parse(datafile_path, d)
-            db_conn.execute('INSERT INTO quarantines VALUES(:Date, :Students_Quarantined, :Staff_Quarantined)', parsed[0])
+            # After Jan 10, 2022 they stopped publishing the quarantine data
+            if d < date(2022, 1, 11):
+                db_conn.execute('INSERT INTO quarantines VALUES(:Date, :Students_Quarantined, :Staff_Quarantined)', parsed[0])
             db_conn.executemany('INSERT INTO cases VALUES(:Primary_Location, :Date, :Active_Student, :Total_Student, :Active_Staff, :Total_Staff)', parsed[1:])
             db_conn.execute('INSERT INTO dates VALUES(?)', (d.isoformat(), ))
     
