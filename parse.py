@@ -14,14 +14,19 @@ def parse(path: str, d: date) -> List[Dict[str, str]]:
 
     # remaining lines are per-school case data
     for i in range(1, len(lines), 5):
-        rec = {
-            'Date': d.isoformat(),
-            'Primary_Location': lines[i].strip(),
-            'Active_Student': lines[i+1].strip(),
-            'Total_Student': lines[i+2].strip(),
-            'Active_Staff': lines[i+3].strip(),
-            'Total_Staff': lines[i+4].strip()
-        }
+        try:
+            rec = {
+                'Date': d.isoformat(),
+                'Primary_Location': lines[i].strip(),
+                'Active_Student': lines[i+1].strip(),
+                'Total_Student': lines[i+2].strip(),
+                'Active_Staff': lines[i+3].strip(),
+                'Total_Staff': lines[i+4].strip()
+            }
+        except Exception as e:
+            print('exception at {}:{}'.format(path, i+1))
+            raise
+
         records.append(rec)
     return records
 
