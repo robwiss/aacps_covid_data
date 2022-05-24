@@ -18,10 +18,10 @@ def parse(path: str, d: date) -> List[Dict[str, str]]:
             rec = {
                 'Date': d.isoformat(),
                 'Primary_Location': lines[i].strip(),
-                'Active_Student': lines[i+1].strip(),
-                'Total_Student': lines[i+2].strip(),
-                'Active_Staff': lines[i+3].strip(),
-                'Total_Staff': lines[i+4].strip()
+                'Active_Student': int(lines[i+1].strip()),
+                'Total_Student': int(lines[i+2].strip()),
+                'Active_Staff': int(lines[i+3].strip()),
+                'Total_Staff': int(lines[i+4].strip())
             }
         except Exception as e:
             print('exception at {}:{}'.format(path, i+1))
